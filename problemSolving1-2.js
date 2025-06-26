@@ -49,7 +49,7 @@ function gradeChecker(marks) {
 function arrayLeapYearCount(arr) {
     const leapYear = [];
     for (const ar of arr) {
-        if (ar % 400 === 0) {
+        if ((ar % 4 === 0 && ar % 100 !== 0) || ar % 400 === 0) {
             leapYear.push(ar)
         }
     }
