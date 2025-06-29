@@ -70,5 +70,19 @@ function oddAverage(numbers) {
     return averageWithDecimale;
 }
 
-const numbers2 = oddAverage([2, 3, 4, 5, 6, 7, 8, 9]);
-console.log(numbers2);
+// const numbers2 = oddAverage([2, 3, 4, 5, 6, 7, 8, 9]);
+// console.log(numbers2);
+
+function oddLessOne(numbers) {
+    const oddLessOne = []
+    for (const num of numbers) {
+        if (num % 2 == 1) {
+            const lessOne = num - 1;
+            oddLessOne.push(lessOne)
+        }
+    }
+    return oddLessOne
+}
+
+const numbers3 = oddLessOne([2, 3, 4, 5, 6, 7, 8, 9]);
+console.log(numbers3);
