@@ -12,6 +12,6 @@ const actor = {
 // const money = actor.money;
 
 // destructruing process 
-const { name, age, phone, money } = actor
+const { name, age: boyos, phone, money } = actor
 
-console.log(name, age, phone, money);
+console.log(name, boyos, phone, money);
